@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .reusable__margin {
+    @apply max-w-screen-lg mx-auto;
+  }
+
+  .login__btn {
+    @apply py-2 px-5 bg-cyan-600 rounded-2xl text-white hover:bg-cyan-700;
+  }
+}
