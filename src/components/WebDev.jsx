@@ -1,16 +1,18 @@
+
+
 import { ChevronDown } from "lucide-react";
 import { courceInfo } from "../data/courceInfo";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const WomenCallCenter = () => {
+const WebDev = () => {
   const [shouldTextAppear, setShouldTextAppear] = useState();
   return (
     <div className="reusable__margin mt-1 bg-purple-50 p-3">
       <div className="hover:ring-1 rounded-b-xl">
         <div className="flex items-center justify-center gap-10 py-5 bg-violet-400 drop-shadow-md">
           <h1 className="text-3xl font-semibold text-white">
-            ওমেন কল সেন্টার এজেন্ট
+          ওয়েব ডেভেলপমেন্ট
           </h1>
           <Link className="btn__single" to="/training">
             নিবন্ধন করুন
@@ -21,7 +23,7 @@ const WomenCallCenter = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 mt-3 gap-5">
           <div className="w-full h-96 flex justify-center my-auto">
             <img
-              src="/images/section-call-center.png"
+              src="/images/section-web-dev.png"
               alt="women call center"
               className="w-full h-full object-cover rounded-xl"
             />
@@ -59,4 +61,4 @@ const WomenCallCenter = () => {
   );
 };
 
-export default WomenCallCenter;
+export default WebDev

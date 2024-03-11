@@ -1,16 +1,26 @@
 import Cources from "../components/Cources";
+import DigitalMarketing from "../components/DigitalMarketing";
+import ECommerce from "../components/ECommerce";
+import GraphicsDesign from "../components/GraphicsDesign";
 import Header from "../components/Header";
+import ItService from "../components/ItService";
 import Slider from "../components/Slider";
+import WebDev from "../components/WebDev";
 import WomenCallCenter from "../components/WomenCallCenter";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <Slider />
       <Cources />
-      <WomenCallCenter/>
-    </div>
+      <WomenCallCenter />
+      <ECommerce />
+      <ItService />
+      <GraphicsDesign />
+      <WebDev />
+      <DigitalMarketing />
+    </>
   );
 };
 
