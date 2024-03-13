@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { cources } from "../data/cources";
+import { HashLink } from "react-router-hash-link";
 
 const Cources = () => {
   return (
-    <div className="reusable__margin mt-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 overflow-y-hidden p-3 bg-purple-50 rounded-b-xl hover:ring-1">
+    <div
+      id="cources"
+      className="reusable__margin mt-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 overflow-y-hidden p-3 bg-purple-50 rounded-b-xl hover:ring-1"
+    >
       {cources.map((cource) => (
         <div key={cource.id} className="shadow-lg rounded-b-xl bg-white">
           <div>
@@ -20,10 +24,14 @@ const Cources = () => {
             <div className="flex gap-3 items-center justify-center text-center mb-8 mx-5">
               <p className="qualification">ন্যূনতম এস.এস.সি. পাশ</p>
               <p className="qualification">বয়স ১৮-৪০ বছর</p>
-              <button className="qualification">কোর্সটির আওতাভুক্ত এলাকা</button>
+              <button className="qualification">
+                কোর্সটির আওতাভুক্ত এলাকা
+              </button>
             </div>
             <div className="flex justify-between items-center mb-5 mx-5">
-              <button className="btn__card">বিস্তারিত</button>
+              <HashLink to={`/#${cource.id}`} className="btn__card">
+                বিস্তারিত
+              </HashLink>
               <Link className="btn__card__login" to="/training">
                 নিবন্ধন
               </Link>

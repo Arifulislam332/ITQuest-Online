@@ -4,6 +4,7 @@ import ECommerce from "../components/ECommerce";
 import GraphicsDesign from "../components/GraphicsDesign";
 import Header from "../components/Header";
 import ItService from "../components/ItService";
+import Managments from "../components/Managments";
 import Slider from "../components/Slider";
 import WebDev from "../components/WebDev";
 import WomenCallCenter from "../components/WomenCallCenter";
@@ -20,6 +21,7 @@ const Home = () => {
       <GraphicsDesign />
       <WebDev />
       <DigitalMarketing />
+      <Managments />
     </>
   );
 };

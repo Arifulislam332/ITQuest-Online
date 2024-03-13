@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const GraphicsDesign = () => {
-  const [shouldTextAppear, setShouldTextAppear] = useState();
+  const [shouldTextAppear, setShouldTextAppear] = useState(null);
+  const toggleTextVisibility = (id) => {
+    setShouldTextAppear((prevState) => (prevState === id ? null : id));
+  };
   return (
-    <div className="reusable__margin mt-1 bg-purple-50 p-3">
+    <div id="4" className="reusable__margin mt-1 bg-purple-50 p-3 scroll-mt-24">
       <div className="hover:ring-1 rounded-b-xl">
         <div className="flex items-center justify-center gap-10 py-5 bg-violet-400 drop-shadow-md">
           <h1 className="text-3xl font-semibold text-white">
@@ -21,9 +24,9 @@ const GraphicsDesign = () => {
           {/* left */}
           <div className="flex flex-col w-full h-full justify-center bg-red-100 rounded-xl">
             <div className="flex flex-col gap-3 py-5">
-              {courceInfo.map((info, index) => (
+              {courceInfo.map((info) => (
                 <div
-                  onClick={() => setShouldTextAppear(index)}
+                  onClick={() => toggleTextVisibility(info.id)}
                   key={info.id}
                   className="px-5 py-3 mx-5 rounded-md ring-1"
                 >
@@ -35,7 +38,7 @@ const GraphicsDesign = () => {
                   </div>
                   <p
                     className={`${
-                      shouldTextAppear === index ? "block" : "hidden"
+                      shouldTextAppear === info.id ? "block" : "hidden"
                     } text-gray-400 tracking-wider pt-3`}
                   >
                     {info.description}

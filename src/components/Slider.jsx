@@ -16,7 +16,7 @@ const Slider = () => {
       } else {
         setCurImg(curImg + 1);
       }
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearInterval(slideInterval);
