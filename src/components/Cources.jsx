@@ -9,7 +9,10 @@ const Cources = () => {
       className="reusable__margin mt-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 overflow-y-hidden p-3 bg-purple-50 rounded-b-xl hover:ring-1"
     >
       {cources.map((cource) => (
-        <div key={cource.id} className="shadow-lg rounded-b-xl bg-white">
+        <div
+          key={cource.id}
+          className="hover:scale-105 transition duration-500 ease-in-out hover:ring-1 ring-green-400 shadow-lg rounded-b-xl bg-white"
+        >
           <div>
             <h2 className="text-center text-xl py-3 font-semibold text-white bg-violet-400">
               {cource.title}

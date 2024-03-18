@@ -13,7 +13,7 @@ const Managments = () => {
         {managments.map((member) => (
           <div
             key={member.id}
-            className="flex flex-col text-center shadow-md w-full rounded-b-xl hover:ring-1 mt-1"
+            className="flex flex-col text-center shadow-md w-full rounded-b-xl hover:ring-2 mt-1 hover:scale-105 transition duration-500 ease-in-out"
           >
             <div className="w-full h-10 bg-green-100">
               <p className="w-full text-center text-xs text-gray-400 py-2 px-2">

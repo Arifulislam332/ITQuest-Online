@@ -1,3 +1,4 @@
+import Contact from "../components/Contact";
 import Cources from "../components/Cources";
 import DigitalMarketing from "../components/DigitalMarketing";
 import ECommerce from "../components/ECommerce";
@@ -21,7 +22,21 @@ const Home = () => {
       <GraphicsDesign />
       <WebDev />
       <DigitalMarketing />
+      <Contact />
       <Managments />
+
+      {/* footer */}
+      <div className="reusable__margin mt-1 bg-violet-100 w-full h-full">
+        <div className="pt-8 pb-10">
+          <div className="flex flex-col justify-center w-60 h-1/3 items-center ring-2 mx-auto">
+            <img
+              src="https://herpower.gov.bd/images/hpp-logo-text.png"
+              alt="women logo photo"
+            />
+            <span className="w-full h-1 bg-white "></span>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
