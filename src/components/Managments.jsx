@@ -3,7 +3,7 @@ import { managments } from "../data/managments";
 const Managments = () => {
   return (
     <div className="reusable__margin mt-1 bg-purple-50 p-3">
-      <div className="flex items-center justify-center gap-10 py-5 bg-violet-300 drop-shadow-md">
+      <div className="flex items-center justify-center gap-10 py-5 bg-violet-400 drop-shadow-md">
         <h1 className="text-3xl font-semibold text-white">
           ওমেন কল সেন্টার এজেন্ট
         </h1>

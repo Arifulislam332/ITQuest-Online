@@ -22,8 +22,8 @@ const Home = () => {
       <GraphicsDesign />
       <WebDev />
       <DigitalMarketing />
-      <Contact />
       <Managments />
+      <Contact />
 
       {/* footer */}
       <div className="reusable__margin mt-1 bg-violet-100 w-full h-full">
